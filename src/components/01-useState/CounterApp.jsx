@@ -16,8 +16,6 @@ export const CounterApp = () => {
         <h1>Counter2: { counter2 }</h1>
         <h1>Counter3: { counter3 }</h1>
 
-        <hr />
-
         <button 
             className="btn" 
             onClick={ 
