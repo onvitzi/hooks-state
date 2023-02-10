@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 
 export const FocusScreen = () => {
-
+    //useRef is a React Hook that lets you reference a value that’s not needed for rendering.
     const inputRef = useRef();
 
     const onClick = () => {

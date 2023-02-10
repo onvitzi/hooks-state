@@ -1,9 +1,10 @@
 
 import './App.css';
-import { CounterApp } from './components/01-useState/CounterApp';
-import ListaTareas from './components/08-useReducer/ListaTareas';
-import Hijo from './components/09-useContext/Hijo';
-import { UserProvider } from './components/09-useContext/UserProvider';
+import { CounterApp } from './hooks/01-useState/CounterApp';
+import ListaTareas from './hooks/07-useReducer/ListaTareas';
+import Hijo from './hooks/08-useContext/Hijo';
+import { UserProvider } from './hooks/08-useContext/UserProvider';
+import {Counter} from './redux/counter/Counter'
 
 function App() {
 
@@ -18,6 +19,10 @@ function App() {
        <hr />
        <h1>useReducer</h1>
        <ListaTareas />
+       <hr/>
+       <h1>Redux</h1>
+       <Counter />
+
     </UserProvider>
   );
 }
