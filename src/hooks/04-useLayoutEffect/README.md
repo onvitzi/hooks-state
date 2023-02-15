@@ -22,3 +22,11 @@ useLayoutEffect returns undefined.
 * Effects only run on the client. They don’t run during server rendering.
 
 * When possible, prefer useEffect.
+
+
+
+
+# What is the difference between useEffect and useLayoutEffect?
+***useLayoutEffect*** runs synchronously immediately after React has fully updated the DOM after rendering. This can be useful if you need to retrieve a DOM element and access its dimensions or position on the screen.
+
+***useEffect*** runs asynchronously after rendering, but does not ensure that the DOM has been updated. That is, if you need to retrieve an element from the DOM and access its dimensions or position on screen, you won't be able to do it with useEffect because you don't have the guarantee that the DOM has been updated.
